@@ -17,7 +17,7 @@ for index, row in df.iterrows():
     # coordinates as the arguments
     pdf.line(10, 22, 200, 22)
 
-    # creating pages
+    # creating pages (nested for-loop)
     for i in range(row["Pages"] - 1):
         pdf.add_page()
 
